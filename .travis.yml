@@ -22,8 +22,8 @@ install:
   - sudo apt-get install -qq -y ros-hydro-desktop ros-hydro-roscpp-tutorials ros-hydro-rostest python-catkin-tools
 before_script:
   - ls
-  - mv 20150930/check1.test 20150930/src/beginner_tutorials
-  - mv 20150930/check2.test 20150930/src/beginner_tutorials
+  - mv 20150930/check.* 20150930/src/beginner_tutorials
+  - mv 20151007/check.* 20151007/src/beginner_tutorials
 script:
   - source /opt/ros/hydro/setup.bash
   - cd 20150930
@@ -32,6 +32,20 @@ script:
   - rospack list
   - rostest beginner_tutorials check1.test
   - rostest beginner_tutorials check2.test
+  - cd ..
+  - cd 20151007
+  - cat README.md
+  - catkin build -v -i
+  - source devel/setup.bash
+  - rospack list
+  - rostest beginner_tutorials check1.test
+  - rostest beginner_tutorials check2.test
+  - rostest beginner_tutorials check3.test
+  - rostest beginner_tutorials check4.test
+  - rostest beginner_tutorials check5.test
+  - rostest beginner_tutorials check6.test
+  - rostest beginner_tutorials check7.test
+  - cd ..
 after_failure:
   - find src/ -type d -name .git -prune -o -type f -exec ls -l {} \;
   - rostest -t beginner_tutorials check1.test
