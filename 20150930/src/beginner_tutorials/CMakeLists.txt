@@ -53,6 +53,8 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message2.msg
 # )
 
+add_message_files(FILES Hello.msg)
+
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES
@@ -72,6 +74,8 @@ find_package(catkin REQUIRED COMPONENTS
 #   DEPENDENCIES
 #   geometry_msgs#   std_msgs
 # )
+
+generate_messages(DEPENDENCIES geometry_msgs)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -189,3 +193,9 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+add_executable(listener2 src/listener2.cpp)
+target_link_libraries(listener2 ${catkin_LIBRARIES})
+
