@@ -53,6 +53,7 @@ CMAKE_SOURCE_DIR = /home/yasu-k2/work/2015-soft3/20150930/src/beginner_tutorials
 CMAKE_BINARY_DIR = /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for target CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Hello.dir
 
 # All Build rule for target.
@@ -338,6 +339,67 @@ CMakeFiles/clean_test_results.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/clean_test_results.dir/clean
+=======
+# Target rules for target CMakeFiles/clean_test_results.dir
+
+# All Build rule for target.
+CMakeFiles/clean_test_results.dir/all:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles 
+	@echo "Built target clean_test_results"
+.PHONY : CMakeFiles/clean_test_results.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles 0
+.PHONY : CMakeFiles/clean_test_results.dir/rule
+
+# Convenience name for target.
+clean_test_results: CMakeFiles/clean_test_results.dir/rule
+.PHONY : clean_test_results
+
+# clean rule for target.
+CMakeFiles/clean_test_results.dir/clean:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/clean
+.PHONY : CMakeFiles/clean_test_results.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/clean_test_results.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/clean_test_results_beginner_tutorials.dir
+
+# All Build rule for target.
+CMakeFiles/clean_test_results_beginner_tutorials.dir/all:
+	$(MAKE) -f CMakeFiles/clean_test_results_beginner_tutorials.dir/build.make CMakeFiles/clean_test_results_beginner_tutorials.dir/depend
+	$(MAKE) -f CMakeFiles/clean_test_results_beginner_tutorials.dir/build.make CMakeFiles/clean_test_results_beginner_tutorials.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles 
+	@echo "Built target clean_test_results_beginner_tutorials"
+.PHONY : CMakeFiles/clean_test_results_beginner_tutorials.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/clean_test_results_beginner_tutorials.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results_beginner_tutorials.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles 0
+.PHONY : CMakeFiles/clean_test_results_beginner_tutorials.dir/rule
+
+# Convenience name for target.
+clean_test_results_beginner_tutorials: CMakeFiles/clean_test_results_beginner_tutorials.dir/rule
+.PHONY : clean_test_results_beginner_tutorials
+
+# clean rule for target.
+CMakeFiles/clean_test_results_beginner_tutorials.dir/clean:
+	$(MAKE) -f CMakeFiles/clean_test_results_beginner_tutorials.dir/build.make CMakeFiles/clean_test_results_beginner_tutorials.dir/clean
+.PHONY : CMakeFiles/clean_test_results_beginner_tutorials.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/clean_test_results_beginner_tutorials.dir/clean
+>>>>>>> master
 .PHONY : clean
 
 #=============================================================================
@@ -496,6 +558,7 @@ clean: CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for target CMakeFiles/listener.dir
 
 # All Build rule for target.
@@ -566,6 +629,8 @@ clean: CMakeFiles/listener2.dir/clean
 .PHONY : clean
 
 #=============================================================================
+=======
+>>>>>>> master
 # Target rules for target CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -929,7 +994,11 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles  5
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles  1
+>>>>>>> master
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -960,7 +1029,11 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles  6
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/CMakeFiles  2
+>>>>>>> master
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 

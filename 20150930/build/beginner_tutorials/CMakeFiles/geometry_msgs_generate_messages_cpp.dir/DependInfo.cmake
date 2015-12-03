@@ -15,7 +15,10 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+<<<<<<< HEAD
   "/home/yasu-k2/work/2015-soft3/20150930/devel/include"
+=======
+>>>>>>> master
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

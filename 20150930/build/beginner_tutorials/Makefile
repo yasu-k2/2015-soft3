@@ -150,6 +150,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named _beginner_tutorials_generate_messages_check_deps_Hello
 
 # Build rule for target.
@@ -254,6 +255,8 @@ beginner_tutorials_genpy/fast:
 .PHONY : beginner_tutorials_genpy/fast
 
 #=============================================================================
+=======
+>>>>>>> master
 # Target rules for targets named clean_test_results
 
 # Build rule for target.
@@ -267,6 +270,22 @@ clean_test_results/fast:
 .PHONY : clean_test_results/fast
 
 #=============================================================================
+<<<<<<< HEAD
+=======
+# Target rules for targets named clean_test_results_beginner_tutorials
+
+# Build rule for target.
+clean_test_results_beginner_tutorials: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_beginner_tutorials
+.PHONY : clean_test_results_beginner_tutorials
+
+# fast build rule for target.
+clean_test_results_beginner_tutorials/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results_beginner_tutorials.dir/build.make CMakeFiles/clean_test_results_beginner_tutorials.dir/build
+.PHONY : clean_test_results_beginner_tutorials/fast
+
+#=============================================================================
+>>>>>>> master
 # Target rules for targets named download_extra_data
 
 # Build rule for target.
@@ -332,6 +351,7 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named listener
 
 # Build rule for target.
@@ -358,6 +378,8 @@ listener2/fast:
 .PHONY : listener2/fast
 
 #=============================================================================
+=======
+>>>>>>> master
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -526,6 +548,7 @@ gtest_main/fast:
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+<<<<<<< HEAD
 src/listener.o: src/listener.cpp.o
 .PHONY : src/listener.o
 
@@ -574,12 +597,15 @@ src/listener2.cpp.s:
 	$(MAKE) -f CMakeFiles/listener2.dir/build.make CMakeFiles/listener2.dir/src/listener2.cpp.s
 .PHONY : src/listener2.cpp.s
 
+=======
+>>>>>>> master
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+<<<<<<< HEAD
 	@echo "... _beginner_tutorials_generate_messages_check_deps_Hello"
 	@echo "... beginner_tutorials_gencpp"
 	@echo "... beginner_tutorials_generate_messages"
@@ -589,6 +615,10 @@ help:
 	@echo "... beginner_tutorials_genlisp"
 	@echo "... beginner_tutorials_genpy"
 	@echo "... clean_test_results"
+=======
+	@echo "... clean_test_results"
+	@echo "... clean_test_results_beginner_tutorials"
+>>>>>>> master
 	@echo "... download_extra_data"
 	@echo "... doxygen"
 	@echo "... edit_cache"
@@ -599,8 +629,11 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+<<<<<<< HEAD
 	@echo "... listener"
 	@echo "... listener2"
+=======
+>>>>>>> master
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -616,12 +649,15 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+<<<<<<< HEAD
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
 	@echo "... src/listener2.o"
 	@echo "... src/listener2.i"
 	@echo "... src/listener2.s"
+=======
+>>>>>>> master
 .PHONY : help
 
 

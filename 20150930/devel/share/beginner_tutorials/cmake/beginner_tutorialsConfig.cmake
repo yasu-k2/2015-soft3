@@ -91,9 +91,15 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(beginner_tutorials_FOUND_CATKIN_PROJECT TRUE)
 
+<<<<<<< HEAD
 if(NOT "/home/yasu-k2/work/2015-soft3/20150930/devel/include " STREQUAL " ")
   set(beginner_tutorials_INCLUDE_DIRS "")
   set(_include_dirs "/home/yasu-k2/work/2015-soft3/20150930/devel/include")
+=======
+if(NOT " " STREQUAL " ")
+  set(beginner_tutorials_INCLUDE_DIRS "")
+  set(_include_dirs "")
+>>>>>>> master
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -122,7 +128,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD
     foreach(path /home/yasu-k2/work/2015-soft3/20150930/devel/lib;/home/yasu-k2/work/2015-soft3/20150930/devel/lib;/home/yasu-k2/catkin_ws/devel/lib;/opt/ros/indigo/lib)
+=======
+    foreach(path /home/yasu-k2/work/2015-soft3/20150930/devel/lib;/home/yasu-k2/work/2015-soft3/20150930/devel/lib;/opt/ros/indigo/lib)
+>>>>>>> master
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -145,7 +155,11 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
+<<<<<<< HEAD
 set(beginner_tutorials_EXPORTED_TARGETS "beginner_tutorials_generate_messages_cpp;beginner_tutorials_generate_messages_lisp;beginner_tutorials_generate_messages_py")
+=======
+set(beginner_tutorials_EXPORTED_TARGETS "")
+>>>>>>> master
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${beginner_tutorials_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -182,7 +196,11 @@ foreach(depend ${depends})
   list(APPEND beginner_tutorials_EXPORTED_TARGETS ${${beginner_tutorials_dep}_EXPORTED_TARGETS})
 endforeach()
 
+<<<<<<< HEAD
 set(pkg_cfg_extras "beginner_tutorials-msg-extras.cmake")
+=======
+set(pkg_cfg_extras "")
+>>>>>>> master
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${beginner_tutorials_DIR}/${extra})

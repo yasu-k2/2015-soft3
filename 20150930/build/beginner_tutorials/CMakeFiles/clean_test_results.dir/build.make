@@ -46,7 +46,11 @@ CMAKE_BINARY_DIR = /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutoria
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
+<<<<<<< HEAD
 	/usr/bin/cmake -E remove_directory /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/test_results
+=======
+	/usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/remove_test_results.py /home/yasu-k2/work/2015-soft3/20150930/build/beginner_tutorials/test_results
+>>>>>>> master
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
