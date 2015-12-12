@@ -19,7 +19,7 @@
   :super propertied-object
   :slots ())
 (defmethod add-two-ints-server-class
-  (:init () (ros::adverise-service "add_two_ints" roseus::AddTwoInts #'send self :add-two-ints))
+  (:init () (ros::advertise-service "add_two_ints" roseus::AddTwoInts #'send self :add-two-ints))
   (:add-two-ints (req)
 		 (let ((m (send req :response)))                               
 		   (format *error-output* "Returning [~d + ~d = ~d]~%"
