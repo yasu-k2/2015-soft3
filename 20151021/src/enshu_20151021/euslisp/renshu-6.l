@@ -33,12 +33,12 @@
       :debug-view t)
 (send *robot* :rarm :end-coords :assoc *knife*)
 
-(do-until-key
+;(do-until-key
  (send *robot* :rarm :move-end-pos #f(20 0 40) :world
        :debug-view t :look-at-target nil)
  (send *irtviewer* :draw-objects)
  (x::window-main-one)
-)
+;)
 
 ;; DO NOT EDIT AFTER THIS LINE
 (send *unit-test* :print-result)

@@ -48,7 +48,7 @@
 (send r :init-ending)
 (objects (list r))
 
-(do-until-key
+(dotimes (i 1000)
  (send *irtviewer* :draw-objects)
 )
 
